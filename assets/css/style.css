@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb900;
+    --font-heading: Sen, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    width: 1170px;
+    margin: auto;
+}
+
+/* Common */
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    background: #171100;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.header-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+    text-decoration: none;
+    padding: 8px 21px;
+}
+
+.header .nav li.active a,
+.header .nav a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.header .nav li.active a {
+    position: relative;
+    color: #171100;
+}
+
+.header .nav li.active a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 11px;
+    bottom: 4px;
+    left: 22px;
+    border-radius: 13px;
+    background-color: #171100;
+}
+
+.header .action {
+    margin-left: 70px;
+}
+
+header .action .sign-up-btn {
+    text-decoration: none;
+    min-width: 144px;
+}
