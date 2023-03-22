@@ -160,32 +160,3 @@
     font-style: italic;
     font-display: swap;
 }
-
-/* =========== Sen =========== */
-@font-face {
-    font-family: 'Sen';
-    src: url('Sen/Sen-Bold.woff2') format('woff2'),
-        url('Sen/Sen-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sen';
-    src: url('Sen/Sen-ExtraBold.woff2') format('woff2'),
-        url('Sen/Sen-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Sen';
-    src: url('Sen/Sen-Regular.woff2') format('woff2'),
-        url('Sen/Sen-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
