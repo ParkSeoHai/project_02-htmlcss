@@ -404,26 +404,27 @@ header .action .sign-up-btn {
 }
 
 /* Feedback */
-.feed-back {
+.feedback {
     width: 100%;
     margin-top: 200px;
     background-color: #2E2100;
 }
 
-.feed-back .body {
+.feedback .feedback-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 96px 0;
 }
 
-.feed-back .author .img {
+.feedback .author .img {
     width: 72px;
     height: 72px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-.feed-back .author .name {
+.feedback .author .name {
     font-weight: 700;
     font-family: var(--font-heading);
     font-size: 2.4rem;
@@ -432,38 +433,100 @@ header .action .sign-up-btn {
     margin: 18px 0 4px;
 }
 
-.feed-back .author .work {
+.feedback .author .work {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #BFBCB3;
 }
 
-.feed-back .author .dots {
+.feedback .author .dots {
     display: flex;
     gap: 6px;
     margin-top: 28px;
 }
 
-.feed-back .author .dot {
-    width: 6px;
-    display: block;
+.feedback .author .dot {
     padding: 3px;
     border-radius: 50%;
     background-color: #634700;
     cursor: pointer;
 }
 
-.feed-back .author .dot.active {
+.feedback .author .dot.active {
     background-color: #FFB900;
+    cursor: default;
 }
 
-.feed-back .body .feel {
-    width: 770px;
-    padding-left: 30px;
+.feedback .feedback-item .content {
+    width: 66%;
+}
+
+.feedback .feedback-item .feel {
+    margin-left: 30px;
     font-weight: 400;
     font-style: italic;
     font-size: 2.6rem;
     line-height: 1.54;
     color: #FFFFFF;
+}
+
+/* Features */
+.features {
+    margin-top: 200px;
+}
+
+.features .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features .body .images {
+    width: 59%;
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features .images img:nth-child(1) {
+    margin-top: 34px;
+}
+
+.features .body .content {
+    width: 41%;
+}
+
+.features .content .desc {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 16px;
+}
+
+.features .body .btn-features {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    margin-top: 32px;
+    min-width: 137px;
+}
+
+.features .content.features-2 {
+    width: 49%;
+}
+
+.features .images.features-2 {
+    width: 41%;
+}
+
+.features .images.features-2 img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    margin-top: 0;
 }
