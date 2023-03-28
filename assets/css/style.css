@@ -61,6 +61,14 @@ body {
     line-height: 1.26;
 }
 
+.heading.lv3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
 .desc {
     font-weight: 400;
     color: #5F5B53;
@@ -656,4 +664,85 @@ header .action .sign-up-btn {
 
 .blog .dot.active {
     background-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background: #2E2100;
+    padding: 96px 0 28px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+}
+
+.footer .row .column:nth-child(1) {
+    width: 35%;
+}
+
+.footer .row .column {
+    width: 21.6%;
+}
+
+.footer .footer-desc {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.footer .column .desc.footer-desc {
+    margin: 18px 0;
+    max-width: 267px;
+}
+
+.footer .column h3 {
+    position: relative;
+}
+
+.footer .column h3::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    left: 0;
+    bottom: -14px;
+    border: 1px solid #59554B;
+}
+
+.footer .socials-list {
+    display: flex;
+    align-items: center;
+    gap: 0 18px;
+}
+
+.footer .socials-item {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.footer .column .list {
+    margin-top: 31px;
+}
+
+.footer .column .item {
+    margin-top: 12px;
+}
+
+.footer .column .item a {
+    text-decoration: none;
+}
+
+.footer .column .item strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .copyright p {
+    color: #807D74;
+    margin-top: 28px;
+    text-align: center;
 }
